@@ -1,0 +1,665 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Sevillana&display=swap');
+
+*{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+}
+/*nav bar*/
+header{
+    background-color: rgb(63, 194, 255);
+    padding: 10px;
+    font-size: 15px;
+    font-family: "Bungee", sans-serif;
+    height: 80px;
+}
+
+.barra a img{
+    height: 64px;
+    vertical-align: middle;
+}
+ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin-bottom: 0;
+}
+.mobileMenu{
+    display: none;
+}
+.barra ul li{
+    list-style: none;
+    display: inline;
+    padding: 0px 5px;
+    vertical-align: middle;
+}
+
+.barra a{
+    text-decoration: none;
+    color: black;
+}
+
+.barra{
+    display: flex;
+    justify-content: space-between;
+}
+
+.barra a:hover{
+    color: rgb(250, 250, 108);
+}
+
+/* slide section */
+.slide {
+    display: inline-block;
+    position: fixed;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+    height: 95vh;
+    z-index: -1;
+    top: -100vh;
+    background-color: #0a0a0a79;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+  }
+  
+  #slide.open {
+    transform: translateY(100vh) translateY(80px);
+    z-index: 10;
+  }
+  
+  .slide li {
+    padding-left: 0px;
+    padding: 3px;
+    margin-bottom: 20px;
+  }
+  
+  .slide a {
+    color: white;
+    font-family: "Bungee", sans-serif;
+    font-size: 2rem;
+  }
+  
+  .slide ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+/*main, call to action*/
+main{
+    background-image: url(assets/crowd-1056764_1280.jpg);
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.call{
+    background-color: rgba(0, 100, 167, 0.37);
+    width: 55%px;
+    border: 3px solid rgb(10, 255, 243);
+    padding: 10px;
+    margin: 5px;
+    border-radius: 30px;
+    box-shadow: 0 0 5px 5px rgba(203, 255, 216, 0.767);
+    color: rgb(135, 255, 245);
+}
+.call h1{
+    text-shadow: 0 6px rgb(0, 0, 0);
+}
+.call h3{
+    margin-top: 10px;
+    text-shadow: 0 4px rgb(0, 0, 0);
+}
+.call p{
+    margin-bottom: 20px;
+}
+.call .masInfo{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+.call .masInfo:hover{
+    box-shadow: 0 0 5px 5px white;
+    color: rgb(187, 255, 0);
+}
+
+.call .redes{
+    color: rgb(159, 255, 242);
+    font-size: 30px;
+    padding: 0 4px 0 4px;
+    text-shadow: 0 5px black;
+}
+
+.redes:hover{
+    color: rgb(200, 255, 0);
+}
+
+h1, h2, h3{
+    font-family: "Bungee", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*sección de eventos */
+
+.eventSect article{
+    border: 4px solid black;
+    border-radius: 50px;
+    color: aliceblue;
+    background-color: rgb(46, 46, 46);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 45%; 
+    padding: 1rem;
+}
+
+.eventSect article img{
+    border-style: none;
+    border-radius: 60px;
+}
+
+.eventSect div{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.eventSect a{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    display: inline;
+}
+
+.eventSect a:hover{
+    color: rgb(250, 250, 108);
+    box-shadow: 0 0 5px 5px rgb(48, 131, 255);
+}
+
+.eventSect{
+    background-color: rgb(195, 226, 255);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.eventSect h2{
+    height: 55px;
+    width: 100%;
+    background-color: rgb(80, 158, 231);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+}
+/*
+article{
+    background-color: rgba(99, 141, 255, 0.315);
+    border: 4px solid black;
+    border-radius: 50px;
+}
+
+article img{
+    border: 5px solid black;
+    border-style: none;
+    border-radius: 60px;
+}
+*/
+
+
+/*sección música*/
+.musicSect h2{
+    line-height: 4rem;
+    height: 55px;
+    background-color: rgb(80, 158, 231);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.musicSect div{
+    background-color: rgb(195, 226, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.musicSect h4{
+    padding: 20px;
+}
+
+.musicSect a{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+}
+
+.musicSect a:hover{
+    color: rgb(250, 250, 108);
+    box-shadow: 0 0 5px 5px rgb(48, 131, 255);
+}
+
+footer{
+    background-color:rgba(0, 0, 0, 0.711);
+    display: flex;
+    justify-content: space-between;
+}
+footer p{
+    display: inline;
+    margin-bottom: 0;
+}
+
+
+.footDiv{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+footer a, footer p{
+    color: aliceblue;
+}
+
+footer a:hover{
+    color: rgb(240, 240, 147);
+}
+
+
+/*página de eventos grid*/
+.tituloEvent{
+    line-height: 4rem;
+    height: 55px;
+    background-color: rgb(80, 158, 231);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+}
+.eventGrid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    background-color: rgb(46, 46, 46);
+    color: aliceblue;
+}
+
+.eventBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+}
+.eventBox .parr{
+    padding-bottom: 10px;
+}
+
+/*página de musica grid*/
+.tituloMusic{
+    line-height: 4rem;
+    height: 55px;
+    background-color: rgb(80, 158, 231);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+section .dnbDef{
+    background-color: rgb(195, 226, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dnbDef p{
+    text-align: center;
+    margin: 20px;
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+table{
+    margin: 20px;
+    background-color: rgb(219, 255, 172);
+}
+
+.subtit{
+    line-height: 4rem;
+    height: 35px;
+    background-color: rgb(80, 158, 231);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.artGrid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    background-color: rgb(46, 46, 46);
+    color: aliceblue;
+}
+
+.artistInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid rgb(0, 0, 0);
+    padding: 20px;
+}
+
+.artistInfo .bio{
+    margin: 20px;
+    font-size: large;
+    text-align: center;
+}
+
+.artistInfo a{
+    color: rgb(194, 235, 221);
+    padding: 30px 10px;
+    font-size: large;
+    
+}
+
+.artistInfo a:hover{
+    color: rgb(240, 240, 147);
+}
+
+
+/*about us*/
+
+.sectNosotros{
+    background-color: rgb(195, 226, 255);
+    padding: 1rem;
+}
+.sectNosotros p{
+    font-size: 17;
+    font-weight: bold;
+    text-align: center;
+}
+
+.divNosotros {
+    background-color: rgb(168, 238, 215);   
+    border: 6px solid ;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.titNosotros{
+    text-shadow: 0 6px rgb(246, 182, 255);
+}
+
+.tit1{
+    text-shadow: 0 6px rgb(246, 182, 255);
+    margin-top: 20px;
+}
+
+.tit2{
+    line-height: 4rem;
+    height: 35px;
+    background-color: rgb(80, 158, 231);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.tit3{
+    line-height: 4rem;
+    height: 35px;
+    background-color: rgb(80, 158, 231);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    font-size: 20px;
+}
+
+
+
+.videos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20rem;
+    background-color: rgb(195, 226, 255);
+}
+
+.videos iframe{
+    padding: 10px;
+    margin-top: 30px;
+    height: auto;
+    width: auto;
+}
+#demo{
+    margin: 70px;
+
+}
+
+/*style para la parte del formulario*/
+
+.contactoDiv{
+    background-size: cover;
+    background-image: linear-gradient(rgba(255, 255, 0, 0.374), rgba(255, 166, 0, 0.571)) ,url(assets/festivalbg.jpeg) ;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin: 5rem;
+}
+
+.titform{
+    display: inline;
+    text-align: center;
+    font-size: 20px;
+    padding: 8px;
+    background-color: rgba(255, 255, 255, 0.466);
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 20px;
+    border-bottom: 2px solid black;
+    font-family: "Bungee", sans-serif;
+}
+
+form input{
+    font-size: 15px;
+    background-color: rgba(255, 255, 255, 0.466);
+    border: none;
+    border-radius: 20px;
+    border-bottom: 2px solid black;
+    font-weight: bold;
+    margin-bottom: 20px; 
+    padding: 8px;
+}
+
+form input::placeholder{
+    color: rgba(0, 17, 56, 0.729);
+}
+
+form textarea{
+    font-size: 15px;
+    background-color: rgba(255, 255, 255, 0.466);
+    border: none;
+    border-radius: 8px;
+    font-weight: bolder;
+    border-bottom: 2px solid black;
+    padding: 8px;
+    margin-bottom: 20px;
+}
+
+form textarea::placeholder{
+    color:rgba(0, 17, 56, 0.729);
+}
+
+form #submit{
+    background-color: bisque;
+    font-size: 15px;
+    border: 2px solid black;
+}
+
+
+
+/*@media queries*/
+
+@media screen and (max-width: 1216px){
+    tbody tr th ul {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 958px){
+    .videos {
+        flex-direction: column;
+    }
+
+    .eventBox iframe {
+        height: auto;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 834px){
+    tbody tr th ul li audio {
+        width: 130px;
+    }
+}
+
+@media screen and (max-width: 698px){
+    .eventGrid{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+}
+}
+
+@media screen and (max-width: 628px){
+    .tit2, .tit3 {
+        font-size: 1rem;
+        height: auto;
+        line-height: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .barra ul .desktopMenu{
+        display: none;
+    }
+
+    .mobileMenu{
+        display: inline;
+    }
+
+    .artistInfo img {
+        width: 80%;
+    }
+
+    .artistInfo ul {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 500px){
+    tbody tr th ul li audio {
+        width: 85px;
+    }
+}
+
+@media screen and (max-width: 440px){
+    tbody {
+        font-size: .5rem;
+    }
+    tbody tr th ul li audio {
+        width: 0px;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .eventSect div{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .eventSect div article:nth-child(1){
+    margin-bottom: 1rem;
+    }
+
+    .eventSect div article{
+        width: 80vw;
+    }
+
+}
+
+@media screen and (max-width: 392px){
+    main{
+        height: auto;
+    }
+    .titNosotros, .tit1 {
+        font-size: 1.2rem;
+    }
+
+    .eventBox iframe {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 370px){
+.tituloMusic {
+    font-size: 1rem;
+}
+.bio {
+    font-family: .5rem;
+}
+}
+
+
